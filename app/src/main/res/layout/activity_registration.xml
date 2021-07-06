@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".registration">
+
+
+    <EditText
+        android:id="@+id/RegistrationConformPass"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/conform_passwordString"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationPass" />
+
+    <TextView
+        android:id="@+id/RegistrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="serif"
+        android:text="@string/registrationString"
+        android:textColor="#EEFF00"
+        android:textColorHint="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/RegistrationName"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:drawableLeft="@drawable/ic_username"
+
+        android:hint="@string/nameSrting"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationTitle" />
+
+    <EditText
+        android:id="@+id/RegistrationPhone"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+
+        android:drawableLeft="@drawable/ic_username"
+        android:hint="@string/phoneString"
+        android:inputType="phone"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationAge" />
+
+    <EditText
+        android:id="@+id/RegistrationAge"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+
+        android:drawableLeft="@drawable/ic_username"
+        android:hint="@string/ageString"
+        android:inputType="numberSigned"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationName" />
+
+    <Button
+        android:id="@+id/RegistrationCreateAccount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/create_accountString"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#EEFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationConformPass" />
+
+    <EditText
+        android:id="@+id/RegistrationPass"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/new_passwordString"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationEmail" />
+
+    <EditText
+        android:id="@+id/RegistrationEmail"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+
+        android:drawableLeft="@drawable/ic_username"
+        android:hint="@string/emailString"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

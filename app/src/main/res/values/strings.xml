@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BookExchange</string>
+    <string name="log_in">Log In</string>
+    <string name="don_t_have_an_account_click_here">Don\'t have an account? Click here</string>
+    <string name="uploadBstring">Upload</string>
+    <string name="registrationString">Registration</string>
+    <string name="nameSrting">Name</string>
+    <string name="ageString">Age</string>
+    <string name="phoneString">Phone</string>
+    <string name="emailString">Email</string>
+    <string name="new_passwordString">New Password</string>
+    <string name="conform_passwordString">Conform Password</string>
+    <string name="create_accountString">Create Account</string>
+</resources>

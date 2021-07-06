@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".bookUpload">
+
+
+    <EditText
+        android:id="@+id/genreNameUpload"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:hint="Genre"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorNameUpload" />
+
+    <EditText
+        android:id="@+id/isbnUpload"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:hint="ISBN"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genreNameUpload" />
+
+    <EditText
+        android:id="@+id/bookNameUpload"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:hint="Book Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImageB" />
+
+    <EditText
+        android:id="@+id/authorNameUpload"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/inputshape"
+        android:hint="Author Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookNameUpload" />
+
+    <Button
+        android:id="@+id/bookUploadB"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:background="@drawable/buttonshape"
+        android:text="Upload Book"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#EEFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isbnUpload" />
+
+    <ImageView
+        android:id="@+id/bookImageUP"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/chooseImageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Choose image"
+        android:textColor="#000000"
+        app:backgroundTint="#EEFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookImageUP" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
